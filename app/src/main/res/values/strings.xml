@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SaleChart</string>
+
+    <string name="chart_explain">7天营业额</string>
+</resources>

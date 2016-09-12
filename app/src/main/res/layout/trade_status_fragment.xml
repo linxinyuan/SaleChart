@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/sale_container"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/chart_container"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_container_bg">
+
+        <RelativeLayout
+            android:id="@+id/trade_sum"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/trade_sum_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/total_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/trade_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="98562"
+                    android:textColor="#427DCF"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/trade_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toLeftOf="@id/trade_money"
+                    android:text="¥"
+                    android:textColor="#427DCF"
+                    android:textSize="8sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/trade_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_trade"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="当天交易额"
+                android:textColor="#427DCF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/trade_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trade_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3sp"
+                android:text="9月9号"
+                android:textColor="#427DCF"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/trade_sum">
+
+            <RelativeLayout
+                android:id="@+id/payout_ticket"
+                android:layout_width="100dp"
+                android:layout_height="78dp"
+                android:background="@color/chart_bg_1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/payout_ticket_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="88888"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/payout_ticket_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="派券"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cancel_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/payout_ticket"
+                android:background="@drawable/cancel_ticket_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cancel_ticket_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="88888"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/cancel_ticket_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="核销"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/solicit_guest"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/payout_ticket"
+                android:layout_marginTop="3dp"
+                android:background="@color/chart_bg_1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/solicit_guest_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="88888"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/solicit_guest_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="拉客"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/solicit_guest_chamption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cancel_ticket"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/solicit_guest"
+                android:background="@drawable/solicit_guest_champion"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/chamption_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="林新源"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/chamption_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="拉客冠军"
+                    android:textColor="#427DCF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SaleChart">
+        <!-- 图表左上方文字说明 -->
+        <attr name="chart_explain" format="string"/>
+        <!-- 侧边间距 -->
+        <attr name="broad_side" format="dimension" />
+        <!-- 绘线颜色 -->
+        <attr name="line_color" format="color" />
+        <!-- 绘线大小 -->
+        <attr name="line_size" format="dimension" />
+        <!-- 绘制点大小 -->
+        <attr name="point_color" format="color" />
+        <!-- 绘制点颜色 -->
+        <attr name="point_size" format="color" />
+        <!-- 底部日期文字颜色 -->
+        <attr name="date_color" format="color"/>
+        <!-- 底部日期文字大小 -->
+        <attr name="date_size" format="dimension"/>
+    </declare-styleable>
+</resources>

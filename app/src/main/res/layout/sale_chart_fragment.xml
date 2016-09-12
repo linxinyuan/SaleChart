@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/chart_container"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/time_container"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_container_bg">
+
+        <com.yunnex.salechart.view.SaleChart
+            android:id="@+id/sale_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            chart:broad_side="8dp"
+            chart:chart_explain="@string/chart_explain"
+            chart:date_color="@color/chart_text_color"
+            chart:date_size="12sp"
+            chart:line_color="@color/chart_line_color"
+            chart:line_size="3dip"
+            chart:point_color="@color/chart_point_color" />
+    </RelativeLayout>
+</RelativeLayout>
